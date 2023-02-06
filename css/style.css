@@ -24,6 +24,11 @@
 
 .container {
     width: 100%;
+    margin: 40px auto;
+    padding: 30px 0;
+}
+.container-header {
+    width: 100%;
     margin: auto;
 }
 
@@ -38,13 +43,15 @@
 }
 .box {
     background-color: var(--colorPrimary2);
-    min-height: 80px;
+    min-height: 150px;
+    padding: 10px;
 }
 .box2 {
     padding: 10px;
     background-color: var(--colorSecondary2);
-    min-height: 80px;
+    min-height: 150px;
 }
+
 
 
 
@@ -62,8 +69,10 @@
     z-index: 9999;
     color: white;
 }
-header .box {
+.box-header {
     padding: 10px;
+    height: 80px;
+    background-color: var(--colorPrimary2);
 }
  main {
     padding-top: 120px;
@@ -72,20 +81,19 @@ header .box {
     padding: 10px;
  }
 
- #planning {
+ #planning, #benefit, #started {
     background-color: var(--colorSecondary);
  }
- #planning .container {
-    margin: 40px auto;
-    padding: 30px 0;
- }
+
  #testimonial .card {
     background-color: var(--colorSecondary);
  }
 
-
-
-
+ footer {
+    background-color: black;
+    color: white;
+ }
+ 
 
 /*RESPONSIVE*/
 
@@ -93,6 +101,9 @@ header .box {
 
 @media screen and (min-width: 768px) {
     .container {
+        max-width: 740px;
+    }
+    .container-header {
         max-width: 740px;
     }
     
@@ -117,6 +128,31 @@ header .box {
     #testimonial .col-dx {
         width: 70%;
     }
+    #testimonial .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #benefit .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #benefit .card {
+        width: calc(100% / 2);
+    }
+    #about-us .container {
+        display: flex;
+    }
+    #about-us .col-sx {
+        width: 60%;
+    }
+    #about-us .col-dx {
+        width: 40%;
+    }
+    #started .container, footer .container {
+        width: 80%;
+    }
     
 }
 
@@ -126,6 +162,9 @@ header .box {
 
 @media screen and (min-width: 1200px) {
     .container {
+        max-width: 1170px;
+    }
+    .container-header {
         max-width: 1170px;
     }
     #intro .card:first-child {
@@ -146,6 +185,12 @@ header .box {
     }
     #planning .card-sx, #planning .card-dx {
         width: 40%;
+    }
+    #benefit .card {
+        width: calc(100% / 3);
+    }
+    #started .container, footer .container {
+        max-width: 500px;
     }
 }
     
