@@ -41,7 +41,11 @@
     background-color: var(--colorPrimary2);
     min-height: 80px;
 }
-
+.box2 {
+    padding: 10px;
+    background-color: var(--colorSecondary2);
+    min-height: 80px;
+}
 
 
 
@@ -59,7 +63,9 @@
     z-index: 9999;
     color: white;
 }
-
+ main {
+    padding-top: 120px;
+ }
 
 
 
@@ -73,11 +79,40 @@
     .container {
         max-width: 740px;
     }
+    
+    #intro .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #intro .card {
+        width: calc(100% / 3);
+    }
+    #intro .card:first-child {
+        width: calc((100% / 3) * 2);
+       }
+    
 }
+
+
+
+ /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1170px;
+    }
+    #intro .card:first-child {
+        width: calc((100% / 3) * 2);
+        display: flex;
+        justify-content: space-between;
+    }
+    #intro .card-sx {
+        width: 30%;
+    }
+    #intro .card-dx {
+        width: 70%;
     }
 }
     
