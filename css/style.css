@@ -37,7 +37,6 @@
     align-items: center;
 }
 .box {
-    padding: 10px;
     background-color: var(--colorPrimary2);
     min-height: 80px;
 }
@@ -63,8 +62,22 @@
     z-index: 9999;
     color: white;
 }
+header .box {
+    padding: 10px;
+}
  main {
     padding-top: 120px;
+ }
+ #intro .card {
+    padding: 10px;
+ }
+
+ #planning {
+    background-color: var(--colorSecondary);
+ }
+ #planning .container {
+    margin: 40px auto;
+    padding: 30px 0;
  }
 
 
@@ -113,6 +126,14 @@
     }
     #intro .card-dx {
         width: 70%;
+    }
+    #planning .row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #planning .card-sx, #planning .card-dx {
+        width: 40%;
     }
 }
     
