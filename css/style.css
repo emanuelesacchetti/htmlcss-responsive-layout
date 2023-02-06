@@ -79,6 +79,9 @@ header .box {
     margin: 40px auto;
     padding: 30px 0;
  }
+ #testimonial .card {
+    background-color: var(--colorSecondary);
+ }
 
 
 
@@ -104,7 +107,16 @@ header .box {
     }
     #intro .card:first-child {
         width: calc((100% / 3) * 2);
-       }
+    }
+    #testimonial .card {
+        display: flex;
+    }
+    #testimonial .col-sx {
+        width: 30%;
+    }
+    #testimonial .col-dx {
+        width: 70%;
+    }
     
 }
 
