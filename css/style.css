@@ -305,9 +305,37 @@ nav {
     margin-right: 10px;
 }
 
+/*Get started*/
 
-
-
+#started .container {
+    padding: 3rem;
+}
+#started h5 {
+    font-weight: 300;
+}
+#started h4 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+#started h3 {
+    font-size: 5rem;
+    color: #fdc15f;
+    margin: 2rem 0;
+}
+#started p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 2rem 0 4rem;
+}
+#started .btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 28px 120px;
+}
+#started .credits {
+    padding: 4rem 0 2rem;
+    font-size: 1.5rem;
+}
 
 
 
@@ -477,8 +505,11 @@ nav {
         font-size: 1rem;
         line-height: 1.5rem;
     }
+    #started .container {
+        padding: 2rem;
+    }
     #started .container, footer .container {
-        max-width: 500px;
+        max-width: 600px;
     }
     .hamburger {
         display: none;
