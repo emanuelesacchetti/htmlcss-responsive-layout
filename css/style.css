@@ -22,25 +22,17 @@
     --colorSecondary2: #aea3ff;
 }
 
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 100%;
     margin: 40px auto;
-    padding: 30px 0;
-}
-.container-header {
-    width: 100%;
-    margin: auto;
+    padding: 30px 20px;
 }
 
-.d-flex {
-    display: flex;
-}
-.space-between {
-    justify-content: space-between;
-}
-.align-center {
-    align-items: center;
-}
 .box {
     background-color: var(--colorPrimary2);
     min-height: 150px;
@@ -52,7 +44,28 @@
     min-height: 150px;
 }
 
+.b-radius { border-radius: 50%; }
 
+/*TEXT*/
+.t-white { color: white; }
+.t-black { color: black; }
+.t-violet { color: var(--colorSecondary); } 
+
+/*FLEX*/
+.d-flex { display: flex; }
+.space-between { justify-content: space-between; }
+.align-center { align-items: center; }
+
+/*BOTTTONI*/
+.btn { 
+    padding: 8px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.btn-big { padding: 5px 40px; }
+.btn-white { background-color: white; }
+.btn-blue { background-color: var(--colorPrimary); }
+.btn-violet { background-color: var(--colorSecondary); }
 
 
 
@@ -69,11 +82,40 @@
     z-index: 9999;
     color: white;
 }
-.box-header {
-    padding: 10px;
-    height: 80px;
-    background-color: var(--colorPrimary2);
+.container-header {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    padding: 0 20px;
 }
+
+.logo {
+    height: 80px;
+    line-height: 93px;
+    padding: 10px;
+}
+.hamburger {
+    font-size: 2rem;
+}
+.header-site ul {
+    list-style: none;
+}
+.header-site ul li {
+    margin-left: 2rem;
+}
+.header-site ul a {
+    text-decoration: none;
+    color: white;
+}
+.header-site ul li:last-child a {
+    color: black;
+}
+nav {
+    display: none;
+}
+
+
+
  main {
     padding-top: 120px;
  }
@@ -154,19 +196,21 @@
         width: 80%;
     }
     
+    
 }
 
 
 
  /*DESKTOP*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     .container {
-        max-width: 1170px;
+        max-width: 960px;
     }
     .container-header {
-        max-width: 1170px;
+        max-width: 960px;
     }
+    
     #intro .card:first-child {
         width: calc((100% / 3) * 2);
         display: flex;
@@ -191,6 +235,12 @@
     }
     #started .container, footer .container {
         max-width: 500px;
+    }
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: block;
     }
 }
     
