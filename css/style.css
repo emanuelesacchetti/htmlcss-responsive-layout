@@ -53,6 +53,9 @@ html {
 .t-gray { color: #303b45; }
 .t-blue { color: var(--colorPrimary); }
 
+.t-center { text-align: center; }
+.t-left { text-align: left; }
+
 /*FLEX*/
 .d-flex { display: flex; }
 .space-between { justify-content: space-between; }
@@ -121,17 +124,20 @@ nav {
  section {
     scroll-margin-top: 80px;
  }
+
+ /*intro*/
  #intro .card {
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
+    line-height: 2rem
  }
  .card h3 {
     padding: 1rem 0;
  }
  .card-sx p {
-    padding: 2rem 0;
- }
+    padding: 2rem 0 0;
+}
 #big-card img {
     width: 70%;
     padding: 0;
@@ -152,12 +158,42 @@ nav {
     font-size: 100px;
 }
 #intro .small-card {
-    text-align: center;
     padding: 2rem;
 }
 
+/*planning*/
 
-
+#planning {
+    padding: 2rem 0;
+ }
+#planning .card {
+    line-height: 2rem;
+    padding: 1rem;
+}
+#planning img {
+    width: 80%;
+}
+#planning .card-sx img {
+    padding-bottom: 5rem;
+}
+#planning .card-sx h3 {
+    font-size: 2rem;
+}
+#planning .card-dx {
+    border-radius: 30px;
+}
+#planning .card-dx h3 {
+    font-size: 1.5rem;
+}
+#planning .arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 30px;
+    display: inline-block;
+    background-color: var(--colorSecondary);
+    margin: 2rem;
+    padding: 5px;
+}
 
 
 
@@ -215,6 +251,9 @@ nav {
     }
     #intro .small-card {
         padding: 2rem 0.5rem;
+    }
+    #planning .card-sx h3 {
+        font-size: 2.5rem;
     }
     #testimonial .card {
         display: flex;
@@ -289,9 +328,19 @@ nav {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        gap: 30px;
     }
     #planning .card-sx, #planning .card-dx {
         width: 40%;
+    }
+    #planning .card-sx h3 {
+        font-size: 1.5rem;
+    }
+    #planning .card {
+        padding: 1rem 1rem 0;
+    }
+    #planning .card-sx img {
+        width: 100%;
     }
     #benefit .card {
         width: calc(100% / 3);
