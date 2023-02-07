@@ -151,8 +151,9 @@ nav {
     padding: 2rem;
 }
 #big-card span {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
     font-size: 1.5rem;
+    display: inline-block;
 }
 #intro .icon i {
     font-size: 100px;
@@ -230,6 +231,9 @@ nav {
     margin: 2rem 0;
     font-weight: 700;
 }
+#testimonial .card {
+    background-color: var(--colorSecondary);
+ }
 
 /*benefit*/
 #benefit .title {
@@ -309,6 +313,7 @@ nav {
 
 #started .container {
     padding: 3rem;
+    margin: 40px auto 0;
 }
 #started h5 {
     font-weight: 300;
@@ -336,24 +341,28 @@ nav {
     padding: 4rem 0 2rem;
     font-size: 1.5rem;
 }
-
-
-
-
-
-
-
  #planning, #benefit, #started {
     background-color: var(--colorSecondary);
  }
 
- #testimonial .card {
-    background-color: var(--colorSecondary);
- }
+/*footer*/
 
  footer {
-    background-color: black;
+    background-color: #333333;
     color: white;
+ }
+ footer .container {
+    margin: 0 auto;
+    padding: 3rem;
+ }
+ footer .text1 {
+    padding: 1.5rem 3rem 2rem;
+ }
+ footer .text2 {
+    padding: 2rem 3rem 1.5rem;
+ }
+ footer a {
+    color: var(--colorSecondary);
  }
  
 
@@ -471,6 +480,9 @@ nav {
     }
     #intro .card-dx {
         width: 50%;
+    }
+    #big-card img {
+        padding: 0;
     }
     #big-card img {
         width: 50%;
