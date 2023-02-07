@@ -44,7 +44,8 @@ html {
     min-height: 150px;
 }
 
-.b-radius { border-radius: 50%; }
+.b-radius-50 { border-radius: 50%; }
+.b-radius-20 { border-radius: 20px; }
 
 /*TEXT*/
 .t-white { color: white; }
@@ -129,7 +130,6 @@ nav {
  #intro .card {
     padding: 1rem;
     margin: 1rem;
-    border-radius: 20px;
     line-height: 2rem
  }
  .card h3 {
@@ -194,8 +194,42 @@ nav {
     margin: 2rem;
     padding: 5px;
 }
-
-
+ /*testimonials*/
+ #testimonial .card {
+    margin: 2rem 0;
+ }
+ #testimonial .intro-text {
+    padding: 3rem;
+ }
+ #testimonial .intro-text h2 {
+    font-size: 3rem;
+    padding: 2.5rem 0;
+ }
+ #testimonial .intro-text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+ }
+ #testimonial img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px;
+ }
+ #testimonial .icon {
+    font-size: 2rem;
+ }
+ #testimonial .text {
+    line-height: 2rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+ }
+ #testimonial .name {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 700;
+}
 
 
 
@@ -259,10 +293,14 @@ nav {
         display: flex;
     }
     #testimonial .col-sx {
-        width: 30%;
+        width: 20%;
     }
     #testimonial .col-dx {
-        width: 70%;
+        width: 80%;
+    }
+    #testimonial .text {
+        padding: 2rem 1rem 2rem 0;
+        text-align: left;
     }
     #testimonial .row {
         margin-left: -10px;
