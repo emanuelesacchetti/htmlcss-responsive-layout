@@ -231,6 +231,40 @@ nav {
     font-weight: 700;
 }
 
+/*benefit*/
+#benefit .title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 4rem 1.5rem;
+}
+#benefit .card {
+    background-color: white;
+    padding: 2.5rem;
+    margin: 2rem 0;
+}
+#benefit .number {
+    font-size: 4rem;
+    font-weight: bold;
+}
+#benefit h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+#benefit p {
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+#benefit .btn {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+
+
+
+
+
 
 
 
@@ -313,7 +347,13 @@ nav {
         margin-right: -10px;
     }
     #benefit .card {
-        width: calc(100% / 2);
+        width: calc((100% / 2) - 1rem);
+        padding: 1rem;
+        margin: 1rem 0.5rem;
+    }
+    #benefit .btn {
+        margin: 1.5rem 0;
+        display: inline-block;
     }
     #about-us .container {
         display: flex;
@@ -381,7 +421,11 @@ nav {
         width: 100%;
     }
     #benefit .card {
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 1rem);
+    }
+    #benefit p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     #started .container, footer .container {
         max-width: 500px;
