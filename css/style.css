@@ -260,7 +260,50 @@ nav {
     margin: 2rem 0;
 }
 
+/*about-us*/
 
+#about-us .image {
+    width: 200px;
+    height: 200px;
+}
+#about-us img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#about-us .image {
+    position: relative;
+}
+#about-us .image i {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    font-size: 5rem;
+}
+#about-us h3 {
+    font-size: 3rem;
+}
+#about-us .col-sx, #about-us .col-dx {
+    padding: 2rem;
+}
+#about-us .text {
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+#about-us .comment {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+#about-us .btn {
+    padding: 8px 25px;
+}
+#about-us .btn i {
+    margin-right: 10px;
+}
 
 
 
@@ -363,6 +406,13 @@ nav {
     }
     #about-us .col-dx {
         width: 40%;
+    }
+    #about-us .comment {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    #about-us .btn {
+        padding: 8px 10px;
     }
     #started .container, footer .container {
         width: 80%;
