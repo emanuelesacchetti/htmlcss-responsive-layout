@@ -50,6 +50,8 @@ html {
 .t-white { color: white; }
 .t-black { color: black; }
 .t-violet { color: var(--colorSecondary); } 
+.t-gray { color: #303b45; }
+.t-blue { color: var(--colorPrimary); }
 
 /*FLEX*/
 .d-flex { display: flex; }
@@ -62,7 +64,7 @@ html {
     border-radius: 50px;
     text-decoration: none;
 }
-.btn-big { padding: 5px 40px; }
+.btn.btn-big { padding: 10px 50px; }
 .btn-white { background-color: white; }
 .btn-blue { background-color: var(--colorPrimary); }
 .btn-violet { background-color: var(--colorSecondary); }
@@ -113,15 +115,58 @@ html {
 nav {
     display: none;
 }
-
-
-
  main {
     padding-top: 120px;
  }
- #intro .card {
-    padding: 10px;
+ section {
+    scroll-margin-top: 80px;
  }
+ #intro .card {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+ }
+ .card h3 {
+    padding: 1rem 0;
+ }
+ .card-sx p {
+    padding: 2rem 0;
+ }
+#big-card img {
+    width: 70%;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+#intro .card:first-child {
+    padding: 0;
+}
+#intro .card-sx {
+    padding: 2rem;
+}
+#big-card span {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+#intro .icon i {
+    font-size: 100px;
+}
+#intro .small-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
  #planning, #benefit, #started {
     background-color: var(--colorSecondary);
@@ -156,10 +201,20 @@ nav {
         margin-right: -10px;
     }
     #intro .card {
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 2rem);
     }
     #intro .card:first-child {
-        width: calc((100% / 3) * 2);
+        width: calc((100% / 3 * 2) - 2rem);
+    }
+    #big-card .card-sx {
+        margin-bottom: 1rem;
+    }
+    #big-card img {
+        margin: 0;
+        padding: 0 2rem;
+    }
+    #intro .small-card {
+        padding: 2rem 0.5rem;
     }
     #testimonial .card {
         display: flex;
@@ -212,15 +267,23 @@ nav {
     }
     
     #intro .card:first-child {
-        width: calc((100% / 3) * 2);
+        width: calc((100% / 3 * 2) - 2rem);
         display: flex;
         justify-content: space-between;
     }
     #intro .card-sx {
-        width: 30%;
+        width: 50%;
     }
     #intro .card-dx {
-        width: 70%;
+        width: 50%;
+    }
+    #big-card img {
+        width: 50%;
+        height: 80%;
+        align-self: flex-end;
+    }
+    #big-card span {
+        font-size: 1rem;
     }
     #planning .row {
         display: flex;
